@@ -1,0 +1,106 @@
+[
+  {
+    "name": "VK",
+    "url": "https://vk.com/{}"
+  },
+  {
+    "name": "Facebook",
+    "url": "https://www.facebook.com/{}"
+  },
+  {
+    "name": "Instagram",
+    "url": "https://www.instagram.com/{}"
+  },
+  {
+    "name": "Twitter",
+    "url": "https://www.twitter.com/{}"
+  },
+  {
+    "name": "OK",
+    "url": "https://ok.ru/{}"
+  },
+  {
+    "name": "BitBucket",
+    "url": "https://bitbucket.org/{}/"
+  },
+  {
+    "name": "GitHub",
+    "url": "https://www.github.com/{}"
+  },
+  {
+    "name": "Codecademy",
+    "url": "https://www.codecademy.com/{}"
+  },
+  {
+    "name": "Codewars",
+    "url": "https://www.codewars.com/users/{}"
+  },
+  {
+    "name": "DeviantART",
+    "url": "https://{}.deviantart.com"
+  },
+  {
+    "name": "Dribbble",
+    "url": "https://dribbble.com/{}"
+  },
+  {
+    "name": "Gravatar",
+    "url": "http://en.gravatar.com/{}"
+  },
+  {
+    "name": "Patreon",
+    "url": "https://www.patreon.com/{}"
+  },
+  {
+    "name": "PayPal",
+    "url": "https://www.paypal.me/{}"
+  },
+  {
+    "name": "PlayStore",
+    "url": "https://play.google.com/store/apps/developer?id={}"
+  },
+  {
+    "name": "Reddit",
+    "url": "https://www.reddit.com/user/{}"
+  },
+  {
+    "name": "Slack",
+    "url": "https://{}.slack.com"
+  },
+  {
+    "name": "Steam",
+    "url": "https://steamcommunity.com/id/{}",
+    "error": {
+      "body_includes": "class=\"error_ctn\""
+    }
+  },
+  {
+    "name": "SteamGroup",
+    "url": "https://steamcommunity.com/groups/{}",
+    "error": {
+      "body_includes": "class=\"error_ctn\""
+    }
+  },
+  {
+    "name": "GitLab",
+    "urlAccount": "https://gitlab.com/{}",
+    "url": "https://gitlab.com/api/v4/users?username={}",
+    "error": {
+      "body": "[]"
+    }
+  },
+  {
+    "name": "Tinder",
+    "url": "https://www.gotinder.com/@{}",
+    "error": {
+      "body_includes": "Looking for Someone?"
+    }
+  },
+  {
+    "name": "Telegram",
+    "error": {
+      "body_includes": "class=\"tgme_page_description\""
+    },
+    "url": "https://t.me/{}"
+  }
+]
