@@ -1,10 +1,15 @@
 # Cpisn
 Check page in social networks
 
+```bash
+npm install cpisn --save
+```
+
 ### How usage?
 
 ```javascript
 import Cpisn from 'cpisn';
+// import Cpisn from 'cpisn/src/Cpisn.mjs'; // module version 
 
 const cpisn = new Cpisn();
 

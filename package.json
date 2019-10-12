@@ -1,8 +1,8 @@
 {
   "name": "cpisn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "check page in social networks",
-  "main": "./src/Cpisn.mjs",
+  "main": "./src/index.js",
   "scripts": {
     "console": "node  --experimental-modules src/demo.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
