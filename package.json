@@ -11,5 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "node-fetch": "^2.6.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreiSoroka/cpisn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AndreiSoroka/cpisn/issues"
+  },
+  "homepage": "https://github.com/AndreiSoroka/cpisn#readme"
 }
