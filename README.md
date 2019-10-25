@@ -9,7 +9,6 @@ npm install cpisn --save
 
 ```javascript
 import Cpisn from 'cpisn';
-// import Cpisn from 'cpisn/src/Cpisn.mjs'; // module version 
 
 const cpisn = new Cpisn();
 

@@ -1,10 +1,10 @@
 {
   "name": "cpisn",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "check page in social networks",
   "main": "./src/index.js",
   "scripts": {
-    "console": "node  --experimental-modules src/demo.mjs",
+    "console": "node  --experimental-modules src/demo.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andrei Soroka",
