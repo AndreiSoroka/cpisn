@@ -8,6 +8,10 @@
     "url": "https://www.facebook.com/{}"
   },
   {
+    "name": "npm",
+    "url": "https://www.npmjs.com/~{}"
+  },
+  {
     "name": "Instagram",
     "url": "https://www.instagram.com/{}"
   },
