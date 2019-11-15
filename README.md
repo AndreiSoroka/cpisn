@@ -26,6 +26,7 @@ Output:
 ```text
 VK true
 Facebook false
+npm true
 Instagram true
 Twitter true
 OK false

@@ -49,7 +49,8 @@
   },
   {
     "name": "Gravatar",
-    "url": "http://en.gravatar.com/{}"
+    "urlAccount": "http://en.gravatar.com/{}",
+    "url": "http://en.gravatar.com/{}.json"
   },
   {
     "name": "Patreon",
