@@ -47,6 +47,7 @@ SteamGroup false
 GitLab false
 Tinder false
 Telegram true
+LiveJournal false
 ```
 
 ### Set pages

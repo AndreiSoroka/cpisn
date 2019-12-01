@@ -110,5 +110,9 @@
       "body_includes": "class=\"tgme_page_description\""
     },
     "url": "https://t.me/{}"
+  },
+  {
+    "name": "LiveJournal",
+    "url": "https://{}.livejournal.com/profile"
   }
 ]
