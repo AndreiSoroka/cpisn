@@ -48,6 +48,10 @@ GitLab false
 Tinder false
 Telegram true
 LiveJournal false
+Leetcode false
+Thingiverse false
+
+
 ```
 
 ### Set pages

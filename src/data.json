@@ -118,5 +118,9 @@
   {
     "name": "Leetcode",
     "url": "https://leetcode.com/{}/"
+  },
+  {
+    "name": "Thingiverse",
+    "url": "https://www.thingiverse.com/{}/about",
   }
 ]
