@@ -77,13 +77,13 @@ const useDefaultPages = false; // for default: true;
 const cpisn = new Cpisn(pages, useDefaultPages);
 
 // you can redefine pages
-cpisn.setPages([])
+cpisn.setPages([]);
 
 // or add more pages
-cpisn.addPages([])
+cpisn.addPages([]);
 
 // show list of pages
-console.log(cpisn.getPages())
+console.log(cpisn.getPages());
 ```
 
 
