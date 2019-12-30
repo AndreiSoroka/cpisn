@@ -126,5 +126,9 @@
   {
     "name": "3dtoday",
     "url": "https://3dtoday.ru/blogs/{}"
+  },
+  {
+    "name": "CareerHabr",
+    "url": "https://career.habr.com/{}"
   }
 ]

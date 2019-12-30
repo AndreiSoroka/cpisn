@@ -1,6 +1,6 @@
 const Cpisn = require('./index.js');
 
-let nickname = 'andreisoroka';
+let nickname = process.env.NICKNAME || 'andreisoroka';
 
 const cpisn = new Cpisn();
 
