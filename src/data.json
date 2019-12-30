@@ -114,5 +114,9 @@
   {
     "name": "LiveJournal",
     "url": "https://{}.livejournal.com/profile"
+  },
+  {
+    "name": "Leetcode",
+    "url": "https://leetcode.com/{}/"
   }
 ]
