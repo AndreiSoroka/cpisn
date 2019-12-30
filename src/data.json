@@ -121,6 +121,10 @@
   },
   {
     "name": "Thingiverse",
-    "url": "https://www.thingiverse.com/{}/about",
+    "url": "https://www.thingiverse.com/{}/about"
+  },
+  {
+    "name": "3dtoday",
+    "url": "https://3dtoday.ru/blogs/{}"
   }
 ]
