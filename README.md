@@ -42,7 +42,7 @@ PayPal true
 PlayStore false
 Reddit false
 Slack false
-Steam false
+Steam true
 SteamGroup false
 GitLab false
 Tinder false
@@ -51,7 +51,12 @@ LiveJournal false
 Leetcode false
 Thingiverse false
 3dtoday false
-
+CareerHabr false
+Litres false
+TikTok true
+UID false
+Artstation false
+Behance false
 
 ```
 
