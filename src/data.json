@@ -5,7 +5,10 @@
   },
   {
     "name": "Facebook",
-    "url": "https://www.facebook.com/{}"
+    "url": "https://www.facebook.com/{}",
+    "error": {
+      "body_includes": ">Facebook</title>"
+    }
   },
   {
     "name": "npm",
@@ -14,10 +17,6 @@
   {
     "name": "Instagram",
     "url": "https://www.instagram.com/{}"
-  },
-  {
-    "name": "Twitter",
-    "url": "https://www.twitter.com/{}"
   },
   {
     "name": "OK",
@@ -101,7 +100,7 @@
     "name": "Tinder",
     "url": "https://www.gotinder.com/@{}",
     "error": {
-      "body_includes": "Looking for Someone?"
+      "body_does_not_includes": "\"user\":"
     }
   },
   {
@@ -142,12 +141,5 @@
   {
     "name": "Coroflot",
     "url": "https://www.coroflot.com/{}/profile"
-  },
-  {
-    "name": "TikTok",
-    "url": "https://www.tiktok.com/@{}",
-    "error": {
-      "body_includes": "error-page"
-    }
   }
 ]

@@ -78,6 +78,10 @@ class Cpisn {
               return result;
             }
 
+            if (page.customError && page.customError(body)){
+              return result;
+            }
+
             result.pageIsFound = true;
             return result;
           }),

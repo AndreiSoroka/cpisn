@@ -117,6 +117,9 @@ const pages = [
         status: 200, // optional 
       }
     },
+    "customError": (customBody) => {
+      return customBody.includes('test');
+    },
   },
 ];
 cpisn.addPages(pages, {isCustomFetch: true});
