@@ -53,11 +53,8 @@ Thingiverse false
 3dtoday false
 CareerHabr false
 Litres false
-TikTok true
 UID false
-Artstation false
-Behance false
-
+Coroflot false
 ```
 
 ### Set pages
@@ -91,4 +88,29 @@ cpisn.addPages([]);
 console.log(cpisn.getPages());
 ```
 
+### Set pages with custom fetch
 
+```javascript
+const pages = [
+  {
+    "name": "CustomSiteSPA",
+    "url": "https://customSpaSite/{}",
+    "error": {
+      "body_includes": "class=\"not-found\"",
+      "body_does_not_includes": "class=\"profile\""
+    },
+    "customFetch": async (url) => {
+      console.log(url); // here you got url with nickname
+      // your code
+      return { 
+        customBody: '', 
+        status: 200, // optional 
+      }
+    },
+  },
+];
+const cpisn = new Cpisn(pages);
+
+// show list of pages
+console.log(cpisn.getPages());
+```

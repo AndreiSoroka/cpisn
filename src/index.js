@@ -55,34 +55,24 @@ class Cpisn {
       return {
         page,
         url,
-        result: fetch(url, this._fetchOptions)
+        result: ((page.customFetch && page.customFetch(url)) || fetch(url, this._fetchOptions))
           .then(async res => {
             const result = {
               pageIsFound: false,
               res,
               body: '',
             };
+
             // status code
-            if (res.status === 404 || res.status === 0) {
+            if (res.status && (res.status === 404 || res.status === 0)) {
               return result;
             }
 
-            const body = await res.text();
+            const body = res.customBody || await res.text();
             result.body = body;
 
-            // customs error
-            if (page.error) {
-              if (page.error.body && body.trim() === page.error.body) {
-                return result;
-              }
-
-              if (page.error.body_includes && body.includes(page.error.body_includes)) {
-                return result;
-              }
-
-              if (page.error.body_does_not_includes && !body.includes(page.error.body_does_not_includes)) {
-                return result;
-              }
+            if (this.checkCustomErrors(page, body)) {
+              return result;
             }
 
             result.pageIsFound = true;
@@ -90,6 +80,16 @@ class Cpisn {
           }),
       };
     });
+  }
+
+  checkCustomErrors(page, body) {
+    if (!page.error) {
+      return false;
+    }
+
+    return (page.error.body && body.trim() === page.error.body)
+      || (page.error.body_includes && body.includes(page.error.body_includes))
+      || (page.error.body_does_not_includes && !body.includes(page.error.body_does_not_includes))
   }
 
   /**

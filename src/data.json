@@ -136,20 +136,8 @@
     "url": "https://www.litres.ru/chitateli/{}"
   },
   {
-    "name": "TikTok",
-    "url": "https://www.tiktok.com/@{}"
-  },
-  {
     "name": "UID",
     "url": "http://uid.me/{}"
-  },
-  {
-    "name": "Artstation",
-    "url": "https://www.artstation.com/{}/profile"
-  },
-  {
-    "name": "Behance",
-    "url": "https://www.behance.net/{}"
   },
   {
     "name": "Coroflot",
