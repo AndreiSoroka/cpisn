@@ -1,6 +1,8 @@
 # Cpisn
 Check page in social networks
 
+You can use UI version: http://furyferret.com/
+
 ```bash
 npm install cpisn --save
 ```
@@ -55,6 +57,7 @@ CareerHabr false
 Litres false
 UID false
 Coroflot false
+TikTok true
 ```
 
 ### Set pages
@@ -85,7 +88,14 @@ cpisn.setPages([]);
 cpisn.addPages([]);
 
 // show list of pages
-console.log(cpisn.getPages());
+(async () => {
+  const queries = cpisn.getQueries(nickname);
+
+  for (let query of queries) {
+    const result = await query.result;
+    console.log(query.page.name, result.pageIsFound, query.url);
+  }
+})();
 ```
 
 ### Set pages with custom fetch
@@ -109,8 +119,15 @@ const pages = [
     },
   },
 ];
-const cpisn = new Cpisn(pages);
+cpisn.addPages(pages, {isCustomFetch: true});
 
 // show list of pages
-console.log(cpisn.getPages());
+(async () => {
+  const queries = cpisn.getQueries(nickname);
+
+  for (let query of queries) {
+    const result = await query.result;
+    console.log(query.page.name, result.pageIsFound, query.url);
+  }
+})();
 ```

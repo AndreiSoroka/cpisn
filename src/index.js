@@ -22,10 +22,13 @@ class Cpisn {
   /**
    * Add more pages
    * @param {Array} pages
+   * @param {Object} options
+   * @param {boolean} [options.isCustomFetch]
    */
-  addPages(pages) {
+  addPages(pages, options= {}) {
     const keys = {};
-    this._pages = [...this._copyArray(pages), ...this._pages]
+    const additionalPages = options.isCustomFetch ? pages : this._copyArray(pages)
+    this._pages = [...additionalPages, ...this._pages]
       .filter(page => {
         if (keys[page.name]) {
           return false;
@@ -82,6 +85,12 @@ class Cpisn {
     });
   }
 
+  /**
+   * Check custom errors
+   * @param page {Object}
+   * @param body {string}
+   * @returns {*|boolean}
+   */
   checkCustomErrors(page, body) {
     if (!page.error) {
       return false;

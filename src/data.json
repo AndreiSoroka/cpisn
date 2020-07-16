@@ -142,5 +142,12 @@
   {
     "name": "Coroflot",
     "url": "https://www.coroflot.com/{}/profile"
+  },
+  {
+    "name": "TikTok",
+    "url": "https://www.tiktok.com/@{}",
+    "error": {
+      "body_includes": "error-page"
+    }
   }
 ]
